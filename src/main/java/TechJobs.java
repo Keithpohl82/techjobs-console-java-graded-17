@@ -126,14 +126,21 @@ public class TechJobs {
             System.out.println("");
             for (int i = 0; i < someJobs.size(); i++) {
                 HashMap<String, String> job = someJobs.get(i);
+
                 System.out.println("*****");
                 for (Map.Entry<String, String> entry : job.entrySet()) {
                     String jobKey = entry.getKey();
                     String jobValue = entry.getValue();
                     System.out.println("" + jobKey + ": " + jobValue);
+
                 }
                 System.out.println("*****");
+                if (i < someJobs.size() - 1) {
+                    System.out.print("\n");
+                }
+
             };
+
         };
     };
 };
